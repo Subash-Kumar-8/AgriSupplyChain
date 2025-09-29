@@ -1,0 +1,148 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_productName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_arrivalDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "int256",
+				"name": "_latitude",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "_longitude",
+				"type": "int256"
+			}
+		],
+		"name": "addProductArrival",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "arrivalId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "productName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "arrivalDate",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "latitudeStr",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "longitudeStr",
+				"type": "string"
+			}
+		],
+		"name": "ProductArrivalAdded",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "arrivalCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "arrivals",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "productName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "arrivalDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "int256",
+				"name": "latitude",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "longitude",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_arrivalId",
+				"type": "uint256"
+			}
+		],
+		"name": "getProductArrival",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

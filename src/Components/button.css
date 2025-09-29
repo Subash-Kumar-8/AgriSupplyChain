@@ -1,0 +1,13 @@
+.btn{
+    background-color: #01bef8;
+    border: #1000fe solid 10px;
+    cursor: pointer;
+    border-radius: 36px;
+    max-width: fit-content;
+    padding: 2px 20px;
+    color: #000000;
+    font-family: sourcesanspro;
+    font-size: 34px;
+    font-weight: 400;
+}
+

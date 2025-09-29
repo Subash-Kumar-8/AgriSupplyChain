@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin: 0;
+  padding: 1rem; 
+  height: 100vh;   
+  width: 100%;     
+  box-sizing: border-box; 
+}
+
+.header {
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.innerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1002px;
+    height: 400px; /* Adjust as needed */
+    border: 2px solid black;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative; /* Needed for positioning bottom */
+    overflow: hidden;
+}
+
+.details {
+    overflow-y: auto;
+    flex: 1; /* Fill available space above bottom */
+    padding-right: 0.5rem; /* Optional: avoid scrollbar overlap */
+}
+
+.bottom {
+    position: absolute;
+    bottom: 1rem; /* keep inside innerBox */
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: white; /* optional: avoid overlap text */
+    padding: 0.5rem 0;
+}
+
+
+.btns {
+  display: flex;
+  gap: 1rem; 
+}
+
+.icon-check,
+.icon-remove {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.icon-check{
+  background-color: green;
+}
+
+.icon-remove{
+  background-color: red;
+}

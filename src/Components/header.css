@@ -1,0 +1,19 @@
+.box{
+    background-color: #01bef8;
+    width: 100%;
+    height: 137px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.box h2{
+    margin-left: 50px;
+}
+
+.right a {
+    color: aqua;
+    margin-right: 50px;
+}
